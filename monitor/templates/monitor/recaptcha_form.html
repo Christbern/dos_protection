@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation reCAPTCHA</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <h2>Veuillez valider que vous n'êtes pas un robot pour rétablir votre accéssibilité</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="client_id" value="{{ client_id }}">
+        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        <br/>
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>

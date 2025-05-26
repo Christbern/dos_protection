@@ -1,0 +1,1 @@
+Djando_dos_protection est un plugin de sécurité permettant de détection des anomalies de trafic réseau de type dénis de service sur un domaine/ip précise suivant un ratio de vulnérabilités prédéfini.
